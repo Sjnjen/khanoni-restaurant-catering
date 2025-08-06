@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khanoni - Restaurant & catering</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <h2>Khanoni</h2>
+            <p>Preparing your dining experience...</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Khanoni</h1>
+                <p>From Our Kitchen to Your Heart!</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Fuel Your Gains</h2>
+            <p>Quality meals delivered to your door</p>
+            <a href="#menu" class="btn pulse">Order Now</a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2 class="section-title">Our Menu</h2>
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-category="regular">Regular Plates</button>
+                <button class="tab-btn" data-category="full">Full Plates</button>
+            </div>
+
+            <div class="menu-items">
+                <!-- Regular Plates -->
+                <div class="menu-category active" id="regular">
+                    <div class="menu-item" data-name="PAP & GRILLED CHICKEN" data-price="53">
+                        <div class="item-image">
+                            <img src="images/pap-chicken.jpg" alt="PAP & GRILLED CHICKEN" class="item-img">
+                            <div class="price-tag">R53</div>
+                        </div>
+                        <div class="item-info">
+                            <h3>PAP & GRILLED CHICKEN</h3>
+                            <button class="add-to-cart">Add to Order <i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-name="PAP & BEEF STEW" data-price="63">
+                        <div class="item-image">
+                            <img src="images/pap-beef.jpg" alt="PAP & BEEF STEW" class="item-img">
+                            <div class="price-tag">R63</div>
+                        </div>
+                        <div class="item-info">
+                            <h3>PAP & BEEF STEW</h3>
+                            <button class="add-to-cart">Add to Order <i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-name="PAP & WORS" data-price="53">
+                        <div class="item-image">
+                            <img src="images/pap-wors.jpg" alt="PAP & WORS" class="item-img">
+                            <div class="price-tag">R53</div>
+                        </div>
+                        <div class="item-info">
+                            <h3>PAP & WORS</h3>
+                            <button class="add-to-cart">Add to Order <i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-name="PAP & MUKOKOROSHI" data-price="63">
+                        <div class="item-image">
+                            <img src="images/pap-mukoko.jpg" alt="PAP & MUKOKOROSHI" class="item-img">
+                            <div class="price-tag">R63</div>
+                        </div>
+                        <div class="item-info">
+                            <h3>PAP & MUKOKOROSHI</h3>
+                            <button class="add-to-cart">Add to Order <i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-name="PAP & STEAK" data-price="53">
+                        <div class="item-image">
+                            <img src="images/pap-steak.jpg" alt="PAP & STEAK" class="item-img">
+                            <div class="price-tag">R53</div>
+                        </div>
+                        <div class="item-info">
+                            <h3>PAP & STEAK</h3>
+                            <button class="add-to-cart">Add to Order <i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-name="PAP & MALA" data-price="58">
+                        <div class="item-image">
+                            <img src="images/pap-mala.jpg" alt="PAP & MALA" class="item-img">
+                            <div class="price-tag">R58</div>
+                        </div>
+                        <div class="item-info">
+                            <h3>PAP & MALA</h3>
+                            <button class="add-to-cart">Add to Order <i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-name="PAP & CHICKEN STEW" data-price="58">
+                        <div class="item-image">
+                            <img src="images/pap-chicken-stew.jpg" alt="PAP & CHICKEN STEW" class="item-img">
+                            <div class="price-tag">R58</div>
+                        </div>
+                        <div class="item-info">
+                            <h3>PAP & CHICKEN STEW</h3>
+                            <button class="add-to-cart">Add to Order <i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-name="PAP & MAGUJU" data-price="56">
+                        <div class="item-image">
+                            <img src="images/pap-maguju.jpg" alt="PAP & MAGUJU" class="item-img">
+                            <div class="price-tag">R56</div>
+                        </div>
+                        <div class="item-info">
+                            <h3>PAP & MAGUJU</h3>
+                            <button class="add-to-cart">Add to Order <i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-name="PAP & MAGUJU & GWANDA" data-price="63">
+                        <div class="item-image">
+                            <img src="images/pap-maguju-gwanda.jpg" alt="PAP & MAGUJU & GWANDA" class="item-img">
+                            <div class="price-tag">R63</div>
+                        </div>
+                        <div class="item-info">
+                            <h3>PAP & MAGUJU & GWANDA</h3>
+                            <button class="add-to-cart">Add to Order <i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-name="PAP & MASHONZHA" data-price="54">
+                        <div class="item-image">
+                            <img src="images/pap-mashonzha.jpg" alt="PAP & MASHONZHA" class="item-img">
+                            <div class="price-tag">R54</div>
+                        </div>
+                        <div class="item-info">
+                            <h3>PAP & MASHONZHA</h3>
+                            <button class="add-to-cart">Add to Order <i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Full Plates -->
+                <div class="menu-category" id="full">
+                    <div class="menu-item" data-name="PAP & MUKOKOROSHI (Full Plate)" data-price="88">
+                        <div class="menu-badge">FULL PLATE</div>
+                        <div class="item-image">
+                            <img src="images/pap-mukoko-full.jpg" alt="PAP & MUKOKOROSHI Full Plate">
+                            <div class="price-tag">R88</div>
+                        </div>
+                        <div class="item-info">
+                            <h3>PAP & MUKOKOROSHI</h3>
+                            <p>Generous portion of pap with mukokoroshi</p>
+                            <button class="add-to-cart">Add to Order <i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-name="PAP & CHICKEN STEW (Full Plate)" data-price="73">
+                        <div class="menu-badge">FULL PLATE</div>
+                        <div class="item-image">
+                            <img src="images/pap-chicken-stew-full.jpg" alt="PAP & CHICKEN STEW Full Plate">
+                            <div class="price-tag">R73</div>
+                        </div>
+                        <div class="item-info">
+                            <h3>PAP & CHICKEN STEW</h3>
+                            <p>Hearty portion with our signature chicken stew</p>
+                            <button class="add-to-cart">Add to Order <i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-name="PAP & WORS (Full Plate)" data-price="67">
+                        <div class="menu-badge">FULL PLATE</div>
+                        <div class="item-image">
+                            <img src="images/pap-wors-full.jpg" alt="PAP & WORS Full Plate">
+                            <div class="price-tag">R67</div>
+                        </div>
+                        <div class="item-info">
+                            <h3>PAP & WORS</h3>
+                            <p>Substantial portion with flavorful wors</p>
+                            <button class="add-to-cart">Add to Order <i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-name="PAP & MALA (Full Plate)" data-price="73">
+                        <div class="menu-badge">FULL PLATE</div>
+                        <div class="item-image">
+                            <img src="images/pap-mala-full.jpg" alt="PAP & MALA Full Plate">
+                            <div class="price-tag">R73</div>
+                        </div>
+                        <div class="item-info">
+                            <h3>PAP & MALA</h3>
+                            <p>Large serving with our spicy mala</p>
+                            <button class="add-to-cart">Add to Order <i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-name="PAP & BEEF STEW (Full Plate)" data-price="76">
+                        <div class="menu-badge">FULL PLATE</div>
+                        <div class="item-image">
+                            <img src="images/pap-beef-full.jpg" alt="PAP & BEEF STEW Full Plate">
+                            <div class="price-tag">R76</div>
+                        </div>
+                        <div class="item-info">
+                            <h3>PAP & BEEF STEW</h3>
+                            <p>Generous helping with tender beef stew</p>
+                            <button class="add-to-cart">Add to Order <i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-name="PAP MUKOKOSHI (3 PCS) & MALA (Full Plate)" data-price="90">
+                        <div class="menu-badge">FULL PLATE</div>
+                        <div class="item-image">
+                            <img src="images/pap-mukoko-3-mala-full.jpg" alt="PAP MUKOKOSHI (3 PCS) & MALA Full Plate">
+                            <div class="price-tag">R90</div>
+                        </div>
+                        <div class="item-info">
+                            <h3>PAP, MUKOKOSHI (3PC) & MALA</h3>
+                            <p>Three pieces mukokoshi with mala</p>
+                            <button class="add-to-cart">Add to Order <i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-name="PAP MUKOKOSHI (4 PCS) & MALA (Full Plate)" data-price="110">
+                        <div class="menu-badge">FULL PLATE</div>
+                        <div class="item-image">
+                            <img src="images/pap-mukoko-4-mala-full.jpg" alt="PAP MUKOKOSHI (4 PCS) & MALA Full Plate">
+                            <div class="price-tag">R110</div>
+                        </div>
+                        <div class="item-info">
+                            <h3>PAP, MUKOKOSHI (4PC) & MALA</h3>
+                            <p>Four pieces mukokoshi with mala</p>
+                            <button class="add-to-cart">Add to Order <i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Khanoni</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Khanoni is a beloved local restaurant in Thohoyandou that specializes in hearty, flavorful meals perfect for both everyday dining and special occasions. While we take pride in serving delicious traditional dishes to our daily customers, we've also built a strong reputation for catering events of all sizes.</p>
+                    <p>Our team prepares every meal with the same care and attention to quality, whether you're ordering a single plate for delivery or catering for hundreds of guests. What sets us apart is our commitment to authentic flavors, generous portions, and reliable service that has made us a trusted name in the community for years.</p>
+                    <div class="delivery-info">
+                        <i class="fas fa-truck"></i>
+                        <p>Delivery available in Thohoyandou and surrounding areas. Outside Thohoyandou delivery is R5 extra.</p>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/restaurant.jpg" alt="Khanoni Restaurant">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3>Your Order</h3>
+                <button class="close-cart">&times;</button>
+            </div>
+            <div class="cart-items">
+                <!-- Cart items will be added here dynamically -->
+            </div>
+            <div class="cart-total">
+                <h4>Total: <span class="total-amount">R0</span></h4>
+            </div>
+            <div class="cart-actions">
+                <button class="btn clear-cart">Clear Order</button>
+                <button class="btn checkout-btn">Checkout via WhatsApp</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>015 023 0833</p>
+                            <p>082 934 1227</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h3>WhatsApp</h3>
+                            <p>Order via WhatsApp</p>
+                            <div class="whatsapp-btns">
+                                <a href="https://wa.me/270150230833" class="whatsapp-btn" target="_blank">Contact 1</a>
+                                <a href="https://wa.me/270829341227" class="whatsapp-btn" target="_blank">Contact 2</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Hours</h3>
+                            <p>Monday - Sunday</p>
+                            <p>9:00 AM - 8:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="messageForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Your Phone" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Khanoni</h2>
+                    <p>Fueling your fitness journey</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Khanoni. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
