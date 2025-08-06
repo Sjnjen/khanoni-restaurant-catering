@@ -191,7 +191,7 @@ function initCartSystem() {
             return;
         }
         
-        const phoneNumbers = ['270150230833', '270829341227'];
+        const phoneNumbers = ['270829341227', '270829341227'];
         const itemsList = cart.map(item => 
             `${item.name} x ${item.quantity} - R${(item.price * item.quantity).toFixed(2)}`
         ).join('\n');
@@ -230,4 +230,5 @@ function init() {
 }
 
 // Start the application
+
 init();
